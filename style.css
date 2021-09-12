@@ -1,5 +1,7 @@
 body {
     margin: 48px;
+    background-color: cornflowerblue;
+    font-family: 'Roboto', sans-serif;
 }
 
 div {
@@ -48,4 +50,22 @@ a.button:hover {
     border: 1px solid blueviolet;
     background-color: chartreuse;
     cursor: pointer;
+}
+
+.goal {
+    display: block;
+    padding: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: blueviolet;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.goal h2 {
+    cursor: pointer;
+}
+
+.goals {
+    margin-top: 16px;
 }

@@ -12,8 +12,42 @@
     <h1 style="text-align: center;">Goals</h1>
     <div class="add-goal">
         <div class="add-goal-text">Add New Goal</div>
-        <div class="add-goal-button-div"><a class="button" type="button">New Goal</a></div>
+        <div class="add-goal-button-div"><a class="button" type="button" onclick="createNewGoal()">New Goal</a></div>
     </div>
+    <div class="goals">
+        <div class="goal">
+            <h2 onclick="toggleGoalView('1')">Goal 1</h2>
+            <div id="1">
+                <h3>Goal title.</h3>
+                <p>Goal text.</p>
+            </div>
+        </div>
+        <div class="goal">
+            <h2 onclick="toggleGoalView('2')">Goal 2</h2>
+            <div id="2">
+                <h3>Goal title.</h3>
+                <p>Goal text.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        let goalsCount = 0;
+
+        function createNewGoal() {
+            console.log("Clicked createNewGoal()")
+        }
+
+        function toggleGoalView(goalNumber) {
+            console.log("Clicked toggleGoalView()")
+            var x = document.getElementById(goalNumber);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
