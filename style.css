@@ -1,0 +1,51 @@
+body {
+    margin: 48px;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+.add-goal {
+    width: 100%;
+    display: table;
+}
+
+.add-goal-text {
+    width: 70%;
+    display: table-cell;
+    padding: 48px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.add-goal-button-div {
+    text-align: center;
+    display: table-cell;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: blueviolet;
+}
+
+a.button:hover {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    background-color: chartreuse;
+    cursor: pointer;
+}
